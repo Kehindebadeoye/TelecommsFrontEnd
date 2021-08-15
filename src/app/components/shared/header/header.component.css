@@ -1,0 +1,9 @@
+#myCarousel{
+    position:relative;
+    margin-top: 5%;
+    
+}
+.carousel-item {
+    height: 32rem;
+  }
+ 

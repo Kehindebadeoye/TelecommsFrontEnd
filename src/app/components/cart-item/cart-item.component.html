@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col">
+        <div class="cart-item">
+            <span>{{ cartItem.deviceName }}</span> x
+             <span>{{ cartItem.qty }}</span>:
+             <strong>{{(cartItem.qty * cartItem.price) | currency: 'USD'}}</strong>
+        </div>
+    </div>
+</div>
+
+

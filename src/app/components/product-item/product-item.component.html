@@ -1,0 +1,20 @@
+
+
+<div class="card mb-4 shadow-sm">
+    <!-- <div class="card shadow-sm"> -->
+    <img class="bd-placeholder-img card-img-top p-3" width="100%" height="400" [src]="deviceItem.url"/>
+
+    <div class="card-body">
+        <strong>{{deviceItem.name}}</strong>
+        <p class="card-text">{{ deviceItem.description }}</p>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <button 
+                type="button" class="btn btn-sm btn-outline-primary" (click)= "handleAddToCart()">
+                Buy
+            </button>   
+            </div>
+            <strong>{{ deviceItem.price | currency : "USD"}}</strong>
+        </div>
+    </div>
+</div>
