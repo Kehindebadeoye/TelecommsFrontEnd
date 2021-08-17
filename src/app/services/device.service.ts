@@ -29,4 +29,17 @@ export class DeviceService {
     //Populate devices from backend and return an Observable
     return this.http.get<Device[]>(apiUrl);
   } 
+
+  findDevicesByUser(cid: number):  Observable<Device[]>{
+    let url:string = "http://localhost:8085/devices/device/user?cid="+cid;
+    return this.http.get<Device[]>(url);
+  }
+
+
+
+  deleteDevice(id : number): Observable<any>{
+    let delUrl ="http://localhost:8085/devices/device?id="+id;
+    return this.http.delete(delUrl)
+  }
+  
 }
