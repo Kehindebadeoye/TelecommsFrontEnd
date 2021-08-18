@@ -17,6 +17,7 @@ import { DataplanComponent } from './components/dataplan/dataplan.component';
 import { DeviceComponent } from './components/device/device.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { StoreComponent } from './components/store/store.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { RegisterComponent } from './components/register/register.component';
     DataplanComponent,
     DeviceComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    StoreComponent
   ],
   imports: [
     BrowserModule,
