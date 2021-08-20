@@ -5,28 +5,40 @@
 
 
 
-
+<h2 style="text-align: center;color: darkblue;">Login</h2>
+<div class="container" style="background-image:url('https://uploads-ssl.webflow.com/5e0f24cd100da4bd7d57d6ec/5f51151c3b86bdef8bdfccb5_webflow-website-design-hero.jpg');">
 <div class="row">
     <div class="col-md-4 offset col-md-4">
         <div class="card-body">
 <form #loginForm = "ngForm" (ngSubmit)= "loginForm.valid && login()">
     <div class="form-group">
       <label for="username" class="form-label">Username</label>
-      <input type="text" class="form-control" [ngClass]="{'is-invalid': loginForm.submitted && username.invalid}" id="username" name="username" #username = "ngModel" [(ngModel)]= "model.username" required>
+      <input type="text" class="form-control" [ngClass]="{'is-invalid': loginForm.submitted && username.invalid}" id="username" name="username" #username = "ngModel" [(ngModel)]= "user.username" required>
       <span class = "invalid-feedback">User name is required</span>
       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
     <div class="mb-3">
       <label for="password" class="form-label">Password</label>
-      <input type="password" class="form-control" [ngClass]="{'is-invalid': loginForm.submitted && password.invalid}" #password="ngModel" id="password" name = "password"[(ngModel)]= "model.password" required>
+      <input type="password" class="form-control" [ngClass]="{'is-invalid': loginForm.submitted && password.invalid}" #password="ngModel" id="password" name = "password"[(ngModel)]= "user.password" required>
       <span class = "invalid-feedback">Password is required</span>
     </div>
-    <div class="mb-3 form-check">
+    <!-- <div class="mb-3 form-check">
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
+    </div> -->
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
 </div>
 </div>
+</div>
+<div class="card-text" style="margin-top: 10%;">
+  <h4 style="text-align: center;">We connect you to the world in a sec</h4>
+</div>
+<div class="container-fluid" style="background-image:url('https://assets-global.website-files.com/5b6df8bb681f89ec20b48f37/5c92c754199a682829dc3f56_content-img5.jpg');margin-top: 10%;">
+  <div class="card" style="width: 20rem;height: 20rem;">
+    <img src="https://media.licdn.com/dms/image/C4E0BAQEYDIjdmbR3NA/company-logo_200_200/0?e=2159024400&v=beta&t=_QS2020wYv6DTDZrKy8nqn3Dd5EcVnDQOi8lnlZurK4" class="card-img-top" alt="...">
+  </div>
+</div>
+<app-footer></app-footer>
+

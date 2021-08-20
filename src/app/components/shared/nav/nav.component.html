@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">AKTelecoms</a>
+      <a class="navbar-brand"[routerLink]="['/']">AKTelecoms</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -13,7 +13,7 @@
             <a class="nav-link" [routerLink]="['/login']">Sign-in</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/store']" tabindex="-1" aria-disabled="true">Visit Store</a>
+            <a class="nav-link disabled" [routerLink]="['/store']" tabindex="-1" aria-disabled="true">Visit Store</a>
           </li>
         </ul>
         <form class="d-flex">

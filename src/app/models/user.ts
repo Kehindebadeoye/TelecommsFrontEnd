@@ -5,12 +5,16 @@ export class User {
  username: string;
  password: string;
  plan: Dataplan[];
+ email: string;
+ mailingAddress: string;
 
- constructor(cid, username="", password = "", plan =[]){
+ constructor(cid, username="", password = "", plan =[],email="", mailingAddress=""){
      this.cid= cid;
      this.username = username;
      this.password = password;
      this.plan = plan;
+     this.email = email;
+     this.mailingAddress = mailingAddress;
  }
 
 }

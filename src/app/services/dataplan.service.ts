@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Dataplan } from '../models/dataplan';
 import { User } from '../models/user';
 import { Device} from '../models/device';
+import { CartService } from './cart.service';
 
 const apiUrl = "http://localhost:8085/dataplans"
 
@@ -30,5 +31,17 @@ export class DataplanService {
     let dUrl: string = "http://localhost:8085/dataplans/dataplan/device?id=" + id;
     return this.http.get<Device[]>(dUrl)
   }
+  // saveDataPlan(id:number): any{
+  //   let url: string = "http://localhost:8085/dataplans/dataplan";
+  //   this.http.post(url, JSON.stringify('{"id": ' + id + '}'));
+  // }
+  saveDataPlan(id: number): any{
+    let url: string = "http://localhost:8085/dataplans/dataplan";
+    this.http.post(url, JSON.stringify('{"id": ' + id + '}'));
+  }
+  addDataPlanToUser(cid: User, id:Dataplan) : any{
+let url: string = "";
+  }
+ 
 
 }

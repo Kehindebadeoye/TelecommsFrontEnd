@@ -16,8 +16,8 @@
             <h1 style="text-align: center;margin-top: 12%;">Check our our wireless plans</h1>
             <div class="col" style="text-align: center; margin-bottom: 6%;">
                 <div class="btn-group" style="margin-top: 3%;" >
-                    <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
-                    <a href="#" class="btn btn-primary" aria-current="page">Active link</a>
+                    <a  [routerLink]="['/login']" class="btn btn-primary active" aria-current="page">8G Bonus Pack</a>
+                    <a  [routerLink]="['/register']" class="btn btn-primary" aria-current="page">Family Package</a>
                     <!-- <a href="#" class="btn btn-primary">Link</a> -->
                     <!-- <a href="#" class="btn btn-primary">Link</a> -->
                   </div>
@@ -94,7 +94,9 @@
     </div>
 <div class="col" style="margin-top: 2%; text-align: center;">
     <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-danger" >Get Started</button>
+        <!-- <button type="button" class="btn btn-danger" routerLink = "/store">Get Started</button> -->
+        <a class="btn btn-danger" [routerLink]="['/store']" tabindex="-1" aria-disabled="true">Visit Store</a>
+
       </div>
 </div>
 </div>

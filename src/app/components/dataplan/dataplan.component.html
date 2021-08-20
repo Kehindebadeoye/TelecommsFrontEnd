@@ -1,1 +1,21 @@
-<p>dataplan works!</p>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <table class="table" id="customers">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+            <tr *ngFor="let dplan of dataplanList">
+                <td>{{dplan.id}}</td>   
+                <td>{{dplan.name}}</td>
+                <td>{{dplan.amount}}</td>
+                <td><input type="submit" value="Add Plan" (click)="save(dplan.amount)" /></td>
+            </tr>
+        </table>   
+     
+    </div>
+</div>

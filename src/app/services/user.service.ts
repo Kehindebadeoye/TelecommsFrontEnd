@@ -25,5 +25,14 @@ export class UserService {
     return this.http.get<User[]>(url);
   }
 
+  saveUser(user: User): Observable<User>{
+    let url : string = "http://localhost:8085/users/user"
+    return this.http.post<User>(url, user);
+  }
+  
+  findAllUsers(): Observable<User[]>{
+    let url : string = "http://localhost:8085/users"
+    return this.http.get<User[]>(url)
 
+  }
 }
