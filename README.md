@@ -1,27 +1,15 @@
-# TelecomsApp
+**Telecom Customer Portal** 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+This application will serve as the customer portal for managing customer accounts with a large telecommunications firm. 
 
-## Development server
+Users can register for an account and login. Users will only see their information and not another user’s data.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Users can manage their devices, adding and removing devices at-will, selecting their phone number for each device, and assigning the data plans associated with their bill. Users can add new devices and assign them to a data plan. 
 
-## Code scaffolding
+Users can see an estimated total cost of the monthly bill based on their selected plans. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+•	Created REST API endpoints for the application using Spring Boot, Spring MVC, and MySQL.
+•	Took advantage of Spring Data JPA framework to map data models to MySQL database.
+•	Used Angular framework to create a single-page web application. 
+•	Designed front end components using Bootstrap, HTML, CSS, and Typescript
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
